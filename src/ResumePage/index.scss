@@ -1,0 +1,28 @@
+@import "@src/common.scss";
+.page{
+    width: pxtovw(1125);
+    .header{
+        position: sticky;
+        background-color: $light;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .sider{
+        height: 100%;
+        width: pxtovw(150);
+        height: 100vh;
+        position: fixed;
+        background-color:$dark;
+    }
+   
+    .resumeContent{
+        margin-left: pxtovw(160);
+        width: pxtovw(975);
+        .content-header{
+            background-color: $light;
+        }
+    }
+}

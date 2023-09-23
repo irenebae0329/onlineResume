@@ -1,0 +1,5 @@
+$dark : #27292c;
+$light : #f0f0f0;
+@function pxtovw($px){
+    @return ($px/11.25)*1vw;
+}

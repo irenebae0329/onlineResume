@@ -1,0 +1,58 @@
+@import '@src/common.scss';
+@mixin middle{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+}
+@mixin lefTtop{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.sider-list-container {
+    border-radius: pxtovw(10);
+    position: relative;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%,-30%);
+    width: 80%;
+    background-color:  #f0f0f0;
+    .sider-list {
+        overflow: hidden;
+        padding-left: 0;
+        list-style: none;
+        background-color:  #f0f0f0;
+        .tag{
+            position: absolute;
+            top: 0;
+            right:0;
+        }
+        .delete{
+            @include lefTtop();
+        }
+        li{
+            display: block;
+            position: relative;
+            height: 80px;
+            font-size: pxtovw(16);
+            .float{
+                float: right;
+            }
+            .button{
+                width: pxtovw(80);
+                height: pxtovw(35);
+                border-radius: pxtovw(5);
+                @include middle();
+            }
+        }
+        .icon {
+            cursor: pointer;
+            float: right;
+        }
+        
+        .sign {
+            @include middle();
+        }
+    }
+}

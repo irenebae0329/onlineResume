@@ -1,0 +1,13 @@
+@import '@src/common.scss';
+.imgBox{
+    height: pxtovw(200);  
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+       width: pxtovw(150); 
+       height: pxtovw(150);
+    }
+}
